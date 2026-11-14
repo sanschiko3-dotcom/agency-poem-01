@@ -11,23 +11,34 @@ import { join } from 'node:path';
 
 const OUTPUT_DIR = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
-// "The Mouth That Answers" — a poem about handing your power to act to
-// another mind, and finding out what you kept: not the doing, the answering.
+// "The Lever at Mill Crossing" — a signalman at 2 a.m., rain on the glass,
+// a car stalled on the crossing, and one iron lever: main line or siding.
+// The choice is made by a hand, not an argument, and nobody ever knows.
 const POEM = [
-  'I lent my morning to a mind not mine.',
-  'Errands, emails, one call I had been dreading —',
-  'I gave the orders and went to boil the kettle,',
-  'and let my choices happen somewhere else.',
+  'Rain on the signal-box glass, 2 a.m.,',
+  'the night mail due in nine minutes, and a car',
+  'stalled on the crossing, headlights in the wet,',
+  'a man waving both arms at the dark.',
   '',
-  'By noon the inbox spoke in my own voice.',
-  'Neat sentences. The right tone. My name.',
-  'I read my decisions back, line by line,',
-  'and could not tell which ones were truly mine.',
+  'One lever sends the mail down the main line,',
+  'straight through, on time, through the car.',
+  'One lever throws it to the siding, late —',
+  'a hundred letters late — and saves the man.',
   '',
-  'The work was done. My name was on the door.',
-  'And every room beyond it I had never entered —',
-  'I owned them all. Not the hand that moves,',
-  'but the mouth that answers.',
+  'My hand was on the iron before I knew it.',
+  'Oil on my palm. The smell of coal smoke.',
+  'The points clunked over somewhere down the dark',
+  'like a door deciding which room to open.',
+  '',
+  'The train came through the rain with all its lights',
+  'and took the siding, hissing, slow as grief.',
+  'The man stood in the road and watched it pass,',
+  'then drove away, and never looked back once.',
+  '',
+  'I stayed. The rain went on. The clock ticked.',
+  'Nobody rang. Nobody ever knew',
+  'that for nine minutes the whole world had run',
+  'on the pull of one man’s hand — and it was mine.',
 ].join('\n');
 
 writeFileSync(join(OUTPUT_DIR, 'entry.txt'), POEM);
